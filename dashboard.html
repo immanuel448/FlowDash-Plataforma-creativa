@@ -11,7 +11,7 @@
 
   <body>
     <div class="app">
-        <!-- MENU -->
+      <!-- MENU -->
       <aside class="sidebar">
         <div class="logo">
           <img src="IMG/icons/logo.svg" />
@@ -40,6 +40,7 @@
         <!-- DASHBOARD -->
         <h1>Dashboard</h1>
 
+        <!-- CARDS -->
         <div class="cards">
           <div class="card">
             <h3>Usuarios</h3>
@@ -65,9 +66,50 @@
           <h3>Usuarios por mes</h3>
           <canvas id="usersChart"></canvas>
         </div>
+
+        <!-- STATS -->
+        <div class="stats">
+          <div class="stat-card">
+            <h3>Usuarios</h3>
+            <p class="stat-number">128</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Proyectos</h3>
+            <p class="stat-number">12</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Ventas</h3>
+            <p class="stat-number">$24,500</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Reportes</h3>
+            <p class="stat-number">36</p>
+          </div>
+        </div>
+
+        <!-- ANALÍTICAS -->
+        <section class="analytics">
+          <h2>Analíticas</h2>
+
+          <div class="analytics-grid">
+            <div class="analytics-card">
+              <h4>Ventas mensuales</h4>
+              <canvas id="chartVentas"></canvas>
+            </div>
+
+            <div class="analytics-card">
+              <h4>Usuarios activos</h4>
+              <canvas id="chartUsuarios"></canvas>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-    
+
+    <!-- para animar los gráficos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/dashboard.js"></script>
   </body>
