@@ -1,16 +1,9 @@
 /* ========== SIDEBAR ========== */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 100;
-  width: 240px;
-  background: #0f172a;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
+.sidebar{
+  width:240px;
+  background:#0f172a;
+  padding:20px;
+  flex-shrink:0; /* NO se aplasta */
 }
 
 /* ========== LOGO ========== */
