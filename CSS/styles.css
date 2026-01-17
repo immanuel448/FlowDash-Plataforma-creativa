@@ -50,3 +50,21 @@ body{
   border-radius:12px;
 }
 
+.charts-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.chart-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:14px;
+}
+
+.chart-card h3{
+  margin-bottom:15px;
+  font-size:1.1rem;
+  color:#e5e7eb;
+}
