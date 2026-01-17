@@ -28,3 +28,19 @@ new Chart(ctxUsuarios, {
     }]
   }
 });
+
+
+const ctx = document.getElementById('salesChart');
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Ene','Feb','Mar','Abr','May','Jun'],
+    datasets: [{
+      label: 'Ventas',
+      data: [0, 0, 0, 0, 0, 0],
+      borderWidth: 2
+    }]
+  }
+});
+
