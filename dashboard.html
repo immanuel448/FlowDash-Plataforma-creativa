@@ -1,173 +1,124 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>FlowDash | Dashboard</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>FlowDash | Dashboard</title>
 
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
-  </head>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+</head>
 
-  <body>
-    <div class="app">
-      <!-- MENU -->
-      <aside class="sidebar">
-        <div class="logo">
-          <img src="IMG/icons/logo.svg" />
-          <span>FlowDash</span>
-        </div>
+<body>
+<div class="app">
 
-        <nav class="menu">
-          <a class="menu-item active">
-            <img src="IMG/icons/dashboard.svg" />
-            <span>Dashboard</span>
-          </a>
-
-          <a class="menu-item">
-            <img src="IMG/icons/reportes.svg" />
-            <span>Reportes</span>
-          </a>
-
-          <a class="menu-item">
-            <img src="IMG/icons/usuarios.svg" />
-            <span>Usuarios</span>
-          </a>
-        </nav>
-      </aside>
-
-      <main class="main-content">
-        <!-- DASHBOARD -->
-        <h1>Dashboard</h1>
-
-        <!-- CARDS -->
-        <div class="cards">
-          <div class="card">
-            <h3>Usuarios</h3>
-            <p class="value">1,248</p>
-          </div>
-
-          <div class="card">
-            <h3>Proyectos</h3>
-            <p class="value">32</p>
-          </div>
-
-          <div class="card">
-            <h3>Ingresos</h3>
-            <p class="value">$12,450</p>
-          </div>
-
-          <div class="card">
-            <h3>Tareas</h3>
-            <p class="value">18</p>
-          </div>
-        </div>
-        <div class="chart-box">
-          <h3>Usuarios por mes</h3>
-          <canvas id="usersChart"></canvas>
-        </div>
-
-        <!-- STATS -->
-        <div class="stats">
-          <div class="stat-card">
-            <h3>Usuarios</h3>
-            <p class="stat-number">128</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Proyectos</h3>
-            <p class="stat-number">12</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Ventas</h3>
-            <p class="stat-number">$24,500</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Reportes</h3>
-            <p class="stat-number">36</p>
-          </div>
-        </div>
-
-        <!-- ANALÍTICAS -->
-        <section class="analytics">
-          <h2>Analíticas</h2>
-
-          <div class="analytics-grid">
-            <div class="analytics-card">
-              <h4>Ventas mensuales</h4>
-              <canvas id="chartVentas"></canvas>
-            </div>
-
-            <div class="analytics-card">
-              <h4>Usuarios activos</h4>
-              <canvas id="chartUsuarios"></canvas>
-            </div>
-          </div>
-        </section>
-
-        <div class="charts-grid">
-          <div class="chart-card">
-            <h3>Ventas mensuales</h3>
-            <canvas id="chartVentas"></canvas>
-          </div>
-
-          <div class="chart-card">
-            <h3>Usuarios activos</h3>
-            <canvas id="chartUsuarios"></canvas>
-          </div>
-        </div>
-
-        <section class="stats">
-          <div class="stat-card">
-            <h4>Ventas del mes</h4>
-            <p>$0</p>
-          </div>
-
-          <div class="stat-card">
-            <h4>Usuarios activos</h4>
-            <p>0</p>
-          </div>
-
-          <div class="stat-card">
-            <h4>Proyectos</h4>
-            <p>3</p>
-          </div>
-
-          <div class="stat-card">
-            <h4>Ingresos</h4>
-            <p>$0</p>
-          </div>
-        </section>
-
-        <section class="chart-box">
-          <h3>Ventas mensuales</h3>
-          <canvas id="salesChart"></canvas>
-        </section>
-
-        <section class="stats">
-          <div class="stat-card">
-            <h4>Ventas mensuales</h4>
-            <span id="ventas">$0</span>
-          </div>
-
-          <div class="stat-card">
-            <h4>Usuarios activos</h4>
-            <span id="usuarios">0</span>
-          </div>
-
-          <div class="stat-card">
-            <h4>Proyectos</h4>
-            <span id="proyectos">0</span>
-          </div>
-        </section>
-      </main>
+  <!-- MENU -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="IMG/icons/logo.svg" />
+      <span>FlowDash</span>
     </div>
 
-    <!-- para animar los gráficos -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/dashboard.js"></script>
-    <script src="js/charts.js"></script>
-  </body>
+    <nav class="menu">
+      <a class="menu-item active">
+        <img src="IMG/icons/dashboard.svg" />
+        <span>Dashboard</span>
+      </a>
+
+      <a class="menu-item">
+        <img src="IMG/icons/reportes.svg" />
+        <span>Reportes</span>
+      </a>
+
+      <a class="menu-item">
+        <img src="IMG/icons/usuarios.svg" />
+        <span>Usuarios</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- CONTENIDO -->
+  <main class="main-content">
+
+    <h1>Dashboard</h1>
+
+    <!-- CARDS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Usuarios</h3>
+        <p class="value">1,248</p>
+      </div>
+
+      <div class="card">
+        <h3>Proyectos</h3>
+        <p class="value">32</p>
+      </div>
+
+      <div class="card">
+        <h3>Ingresos</h3>
+        <p class="value">$12,450</p>
+      </div>
+
+      <div class="card">
+        <h3>Tareas</h3>
+        <p class="value">18</p>
+      </div>
+    </div>
+
+    <!-- GRÁFICA USUARIOS -->
+    <div class="chart-box">
+      <h3>Usuarios por mes</h3>
+      <canvas id="usersChart"></canvas>
+    </div>
+
+    <!-- ANALÍTICAS -->
+    <section class="analytics">
+      <h2>Analíticas</h2>
+
+      <div class="analytics-grid">
+        <div class="analytics-card">
+          <h4>Ventas mensuales</h4>
+          <canvas id="chartVentas"></canvas>
+        </div>
+
+        <div class="analytics-card">
+          <h4>Usuarios activos</h4>
+          <canvas id="chartUsuarios"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRÁFICA SALES -->
+    <section class="chart-box">
+      <h3>Ventas mensuales</h3>
+      <canvas id="salesChart"></canvas>
+    </section>
+
+    <!-- STATS ANIMADOS -->
+    <section class="stats">
+      <div class="stat-card">
+        <h4>Ventas mensuales</h4>
+        <span id="ventas">$0</span>
+      </div>
+
+      <div class="stat-card">
+        <h4>Usuarios activos</h4>
+        <span id="usuarios">0</span>
+      </div>
+
+      <div class="stat-card">
+        <h4>Proyectos</h4>
+        <span id="proyectos">0</span>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/charts.js"></script>
+
+</body>
 </html>
