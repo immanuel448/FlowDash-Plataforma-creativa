@@ -17,3 +17,32 @@ body{
   color:white;
 }
 
+/* eeeeeee */
+
+.dash-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.user-box{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logout{
+  background:#2563eb;
+  border:none;
+  color:white;
+  padding:8px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.logout:hover{
+  background:#1d4ed8;
+}
+
