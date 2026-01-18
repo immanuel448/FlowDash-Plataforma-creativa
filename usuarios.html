@@ -63,26 +63,39 @@
             <p>Desarrollo</p>
           </div>
         </section>
-      </main>
-      <!-- MODAL NUEVO USUARIO eeeeee-->
-      <div class="modal" id="modalUsuario">
-        <div class="modal-content">
-          <h3>Nuevo usuario</h3>
 
-          <input type="text" placeholder="Nombre" />
-          <input type="email" placeholder="Correo" />
-          <select>
-            <option>Administrador</option>
-            <option>Desarrollador</option>
-            <option>Diseñador</option>
-          </select>
+        <!-- MODAL NUEVO USUARIO -->
+        <div class="modal" id="modalUsuario">
+          <div class="modal-content">
+            <!-- eeeeee -->
+            <span id="cerrarModal">✖</span>
 
-          <div class="modal-actions">
-            <button class="btn" id="guardarUsuario">Guardar</button>
-            <button class="btn btn-cancel" id="cerrarModal">Cancelar</button>
+            <h3>Nuevo usuario</h3>
+
+            <input id="nombre" placeholder="Nombre" />
+            <input id="correo" placeholder="Correo" />
+            <select id="rol">
+              <option>Administrador</option>
+              <option>Programador</option>
+              <option>Diseñador</option>
+            </select>
+
+            <button class="btn" id="btnGuardar">Guardar</button>
           </div>
         </div>
-      </div>
+
+        <!-- TABLA DE USUARIOS -->
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Rol</th>
+            </tr>
+          </thead>
+          <tbody id="tablaUsuarios"></tbody>
+        </table>
+      </main>
     </div>
     <script src="js/modal.js"></script>
   </body>

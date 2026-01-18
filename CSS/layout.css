@@ -109,9 +109,11 @@
   border-radius:16px;
 }
 
+/* === TABLA USUARIOS === */
 table{
   width:100%;
   border-collapse:collapse;
+  margin-top: 35px;
 }
 
 th,td{
