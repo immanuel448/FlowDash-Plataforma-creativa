@@ -40,7 +40,7 @@
       <main class="main-content">
         <header class="dash-header">
           <h2>Usuarios</h2>
-          <button class="btn">Nuevo usuario</button>
+          <button class="btn" id="btnNuevoUsuario">Nuevo usuario</button>
         </header>
 
         <!-- GRID USUARIOS -->
@@ -64,6 +64,26 @@
           </div>
         </section>
       </main>
+      <!-- MODAL NUEVO USUARIO eeeeee-->
+      <div class="modal" id="modalUsuario">
+        <div class="modal-content">
+          <h3>Nuevo usuario</h3>
+
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Correo" />
+          <select>
+            <option>Administrador</option>
+            <option>Desarrollador</option>
+            <option>Diseñador</option>
+          </select>
+
+          <div class="modal-actions">
+            <button class="btn" id="guardarUsuario">Guardar</button>
+            <button class="btn btn-cancel" id="cerrarModal">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
