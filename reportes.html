@@ -1,101 +1,96 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>FlowDash | Reportes</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FlowDash | Reportes</title>
 
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/sidebar.css" />
-</head>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="app">
+      <!-- MENU -->
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="IMG/icons/logo.svg" />
+          <span>FlowDash</span>
+        </div>
 
-<div class="app">
+        <nav class="menu">
+          <a class="menu-item" href="dashboard.html">
+            <img src="IMG/icons/dashboard.svg" />
+            <span>Dashboard</span>
+          </a>
 
-  <!-- MENU -->
-  <aside class="sidebar">
-    <div class="logo">
-      <img src="IMG/icons/logo.svg" />
-      <span>FlowDash</span>
+          <a class="menu-item active" href="reportes.html">
+            <img src="IMG/icons/reportes.svg" />
+            <span>Reportes</span>
+          </a>
+
+          <a class="menu-item" href="usuarios.html">
+            <img src="IMG/icons/usuarios.svg" />
+            <span>Usuarios</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- CONTENIDO -->
+      <main class="main-content">
+        <!-- HEADER -->
+        <header class="dash-header">
+          <h2>Reportes</h2>
+        </header>
+
+        <!-- FILTROS -->
+        <section class="filters">
+          <select>
+            <option>Este mes</option>
+            <option>Últimos 3 meses</option>
+            <option>Este año</option>
+          </select>
+
+          <button class="btn">Filtrar</button>
+        </section>
+
+        <!-- TABLA -->
+        <section class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Proyecto</th>
+                <th>Cliente</th>
+                <th>Estado</th>
+                <th>Ingresos</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Web corporativa</td>
+                <td>Empresa X</td>
+                <td>Finalizado</td>
+                <td>$3,200</td>
+              </tr>
+
+              <tr>
+                <td>E-commerce</td>
+                <td>Tienda Y</td>
+                <td>En proceso</td>
+                <td>$1,500</td>
+              </tr>
+
+              <tr>
+                <td>Landing page</td>
+                <td>Startup Z</td>
+                <td>Finalizado</td>
+                <td>$900</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
     </div>
-
-    <nav class="menu">
-      <a class="menu-item" href="dashboard.html">
-        <img src="IMG/icons/dashboard.svg" />
-        <span>Dashboard</span>
-      </a>
-
-      <a class="menu-item active">
-        <img src="IMG/icons/reportes.svg" />
-        <span>Reportes</span>
-      </a>
-
-      <a class="menu-item">
-        <img src="IMG/icons/usuarios.svg" />
-        <span>Usuarios</span>
-      </a>
-    </nav>
-  </aside>
-
-  <!-- CONTENIDO -->
-  <main class="main-content">
-
-    <!-- HEADER -->
-    <header class="dash-header">
-      <h2>Reportes</h2>
-    </header>
-
-    <!-- FILTROS -->
-    <section class="filters">
-      <select>
-        <option>Este mes</option>
-        <option>Últimos 3 meses</option>
-        <option>Este año</option>
-      </select>
-
-      <button class="btn">Filtrar</button>
-    </section>
-
-    <!-- TABLA -->
-    <section class="table-box">
-      <table>
-        <thead>
-          <tr>
-            <th>Proyecto</th>
-            <th>Cliente</th>
-            <th>Estado</th>
-            <th>Ingresos</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Web corporativa</td>
-            <td>Empresa X</td>
-            <td>Finalizado</td>
-            <td>$3,200</td>
-          </tr>
-
-          <tr>
-            <td>E-commerce</td>
-            <td>Tienda Y</td>
-            <td>En proceso</td>
-            <td>$1,500</td>
-          </tr>
-
-          <tr>
-            <td>Landing page</td>
-            <td>Startup Z</td>
-            <td>Finalizado</td>
-            <td>$900</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-  </main>
-</div>
-
-</body>
+  </body>
 </html>

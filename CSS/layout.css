@@ -127,4 +127,38 @@ tbody tr{
   border-bottom:1px solid #334155;
 }
 
+/* === USUARIOS === */
+.users-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.user-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:16px;
+  text-align:center;
+  transition:.3s;
+}
+
+.user-card:hover{
+  transform:translateY(-4px);
+}
+
+.user-card img{
+  width:60px;
+  margin-bottom:10px;
+}
+
+.user-card h4{
+  margin-bottom:5px;
+}
+
+.user-card p{
+  font-size:14px;
+  opacity:.7;
+}
+
+
 
