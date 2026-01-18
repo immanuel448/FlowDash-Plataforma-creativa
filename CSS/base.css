@@ -32,7 +32,7 @@ body{
   gap:15px;
 }
 
-.logout{
+.btn{
   background:#2563eb;
   border:none;
   color:white;
@@ -42,7 +42,7 @@ body{
   transition:.3s;
 }
 
-.logout:hover{
+.btn:hover{
   background:#1d4ed8;
 }
 
