@@ -131,9 +131,20 @@ Proyecto creado para:
 
 ---
 
-## Preview
+## 📸 Preview
 
-> Agrega aquí screenshots del proyecto
+### Index
+![Index](img/index.png)
+
+### Dashboard
+![Dashboard](img/dashboard.png)
+
+### Reportes
+![Reportes](img/reportes.png)
+
+### Usuarios
+![Usuarios](img/usuarios.png)
+
 
 ---
 
