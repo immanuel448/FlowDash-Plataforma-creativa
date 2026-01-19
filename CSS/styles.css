@@ -39,6 +39,32 @@ body {
   color: #0f172a;
 }
 
+/* === PREVIEW DEL SISTEMA === */
+.preview{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.preview h2{
+  font-size:2rem;
+  margin-bottom:30px;
+}
+
+.preview ul{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.preview li{
+  background:#1e293b;
+  padding:15px 25px;
+  border-radius:10px;
+  font-size:1rem;
+}
+
 /* FEATURES */
 .features {
   display: grid;
