@@ -69,6 +69,7 @@ function renderTabla(lista) {
         <td>${r.cliente}</td>
         <td>${r.estado}</td>
         <td>$${r.ingresos}</td>
+        <td>${r.fecha}</td> <!-- FECHA -->
       </tr>
     `;
   });
