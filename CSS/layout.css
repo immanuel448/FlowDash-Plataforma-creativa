@@ -110,6 +110,13 @@
   border-radius: 16px;
 }
 
+.total-box {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e5e7eb;
+}
+
 /* === TABLA USUARIOS === */
 table {
   width: 100%;

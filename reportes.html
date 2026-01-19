@@ -45,13 +45,14 @@
 
         <!-- FILTROS -->
         <section class="filters">
-          <select>
+          <select id="filtroTiempo">
+            <option>Todos</option>
             <option>Este mes</option>
             <option>Últimos 3 meses</option>
             <option>Este año</option>
           </select>
 
-          <button class="btn">Filtrar</button>
+          <button class="btn" id="btnFiltrar">Filtrar</button>
         </section>
 
         <!-- TABLA -->
@@ -89,8 +90,12 @@
               </tr>
             </tbody>
           </table>
+          <div class="total-box">
+            Total ingresos: <span id="totalIngresos">$0</span>
+          </div>
         </section>
       </main>
     </div>
+    <script src="js/reportes.js"></script>
   </body>
 </html>
