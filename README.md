@@ -134,16 +134,16 @@ Proyecto creado para:
 ## 📸 Preview
 
 ### Index
-![Index](img/index.png)
+![Index](IMG/README/index.webp)
 
 ### Dashboard
-![Dashboard](img/dashboard.png)
+![Dashboard](IMG/README/dashboard.webp)
 
 ### Reportes
-![Reportes](img/reportes.png)
+![Reportes](IMG/README/reportes.webp)
 
 ### Usuarios
-![Usuarios](img/usuarios.png)
+![Usuarios](IMG/README/usuarios.webp)
 
 
 ---
